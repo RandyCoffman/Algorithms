@@ -5,6 +5,7 @@ def sum_array(arr):
         first_num = arr[0]
         del arr[0]
         sum = first_num + sum_array(arr)
+    print(sum)
     return sum
 
 my_list = [1,2,3,4,5]
