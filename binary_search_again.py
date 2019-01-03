@@ -5,7 +5,6 @@ def binary_search(list, item):
     while first <= last:
         middle = round((first + last) / 2)
         guess = list[middle]
-        print(guess)
         if guess == item:
             return middle
         if guess > item:
@@ -14,6 +13,7 @@ def binary_search(list, item):
              first = middle + 1
     return None
 
-my_list = [1,2,3,4,5,6,7,8]
+# my_list = [1,2,3,4,5,6,7,8]
+my_list = [4]
 
-binary_search(my_list, 4)
+print(binary_search(my_list, 4))
